@@ -12,6 +12,9 @@ then
 elif [ $fnc == "2" ];
 then
 	java test4.java
+elif [ $fnc == "3" ];
+then
+	java test3.java
 else
 	echo 'Invalid output'
 fi
