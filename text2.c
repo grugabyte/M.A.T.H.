@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <math.h>
 
 int main() {
 
@@ -40,7 +42,8 @@ int main() {
 			break;
 		case 5:
 			printf("This is function 5\n");
-			printf("\nunnassigned");
+			int result5 = num1 % num2;
+			printf(" = %d\n", result5);
 			break;
 		case 6:
 			printf("This is function 6\n");
@@ -56,7 +59,8 @@ int main() {
 			break;
 		case 9:
 			printf("This is function 9\n");
-			printf("\nunnassigned");
+			printf(" Num1 = %d\n", num1);
+			printf(" Num2 = %d\n", num2);
 			break;
 		default:
 			printf("Invalid output\n");
