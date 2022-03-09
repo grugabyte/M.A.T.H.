@@ -10,7 +10,7 @@ available on mac/linux
 Linux & mac (needs git installed):
 git clone https://github.com/grugabyte/M.A.T.H./
 
-To use, open a terminal window in Linux or Mac (make sure the shell ebing used is bash)
+To use, open a terminal window in Linux or Mac (make sure the shell being used is bash)
 "cd M.A.T.H./"
 "bash script1.sh"
 
