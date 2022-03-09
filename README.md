@@ -7,7 +7,7 @@ This program is designed to avoid the massive problem, maths (mental abuse to hu
 Installation:
 available on mac/linux
 
-Linux & mac (needs git installed)
+Linux & mac (needs git installed):
 git clone https://github.com/grugabyte/M.A.T.H./
 
 To use, open a terminal window in Linux or Mac (make sure the shell ebing used is bash)
