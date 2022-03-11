@@ -47,7 +47,8 @@ int main() {
 			break;
 		case 6:
 			printf("This is function 6\n");
-			printf("\nunnassigned");
+			int result6 = num1 * num1;
+			printf(" = %d\n", result6);
 			break;
 		case 7:
 			printf("This is function 7\n");
