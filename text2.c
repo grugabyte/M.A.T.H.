@@ -22,33 +22,33 @@ int main() {
 	switch(fnc) {
 		case 1:
 			printf("This is function 1\n");
-			int result1 = num1 + num2;
-			printf(" = %d\n", result1);
+			float result1 = num1 + num2;
+			printf(" = %f\n", result1);
 			break;
 		case 2:
 			printf("This is function 2\n");
-			int result2 = num1 - num2;
-			printf(" = %d\n", result2);
+			float result2 = num1 - num2;
+			printf(" = %f\n", result2);
 			break;
 		case 3:
 			printf("This is function 3\n");
-			int result3 = num1 / num2;
-			printf(" = %d\n", result3);
+			float result3 = num1 / num2;
+			printf(" = %f\n", result3);
 			break;
 		case 4:
 			printf("This is function 4\n");
-			int result4 = num1 * num2;
-			printf(" = %d\n", result4);
+			float result4 = num1 * num2;
+			printf(" = %f\n", result4);
 			break;
 		case 5:
 			printf("This is function 5\n");
-			int result5 = num1 % num2;
-			printf(" = %d\n", result5);
+			float result5 = num1 % num2;
+			printf(" = %f\n", result5);
 			break;
 		case 6:
 			printf("This is function 6\n");
-			int result6 = num1 * num1;
-			printf(" = %d\n", result6);
+			double result6 = num1 * num1;
+			printf(" = %.2lf\n", result6);
 			break;
 		case 7:
 			printf("This is function 7\n");

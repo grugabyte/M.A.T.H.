@@ -43,6 +43,16 @@ public class test3 {
 			double ans = base * height * 1 / 2;
 			System.out.println("\nThe area of the triangle is: "+ans);
 		}
+
+		else if(fnc == 5) {
+			System.out.println("Enter base: ");
+			double base1 = scanner.nextDouble();
+			System.out.println("Enter height: ");
+			double height1 = scanner.nextDouble();
+			double ans1 = base1 * height1;
+			System.out.println("\nThe area of the paralleglogram is: "+ans1);
+
+		}
 		else {
 			System.out.println("Invalid output");
 		}
