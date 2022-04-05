@@ -17,7 +17,18 @@ then
 	java test3.java
 elif [ $fnc == "4" ];
 then
-	java test5.java
+	echo 'Would you like the java[1] or C[2] version?'
+	read lang
+	if [ $lang == '1' ];
+	then
+		java test5.java
+	elif [ $lang == '2' ];
+	then
+		gcc port.c -o port
+		./port
+	else
+		echo 'invalid'
+	fi
 else
 	echo 'Invalid output'
 fi

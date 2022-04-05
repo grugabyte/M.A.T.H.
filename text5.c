@@ -11,13 +11,13 @@ int main() {
 	res = toupper (res);
 
 	if(res == 'Y') {
-		printf("Thank you");
+		printf("Thank you\n");
 	}
 	else if(res == 'N') {
-		printf("Oof");
+		printf("Ok\n");
 	}
 	else {
-		printf("invalid");
+		printf("invalid\n");
 	}
 
 	return 0;
