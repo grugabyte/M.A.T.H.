@@ -14,4 +14,6 @@ To use, open a terminal window in Linux or Mac (make sure the shell being used i
 "cd M.A.T.H./"
 "bash script1.sh"
 
+In the program, you can use several functions. In these functions, you can use even more functions! For help, simply type "--help" and to exit type "exit".
+
 may recieve "invalid output" if a feature is not currently added.
