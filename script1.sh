@@ -1,37 +1,48 @@
 #!/bin/bash
 
 echo 'Welcome to M.A.T.H.'
-echo 'Enter program to use'
+var=0
+while [ $var == 0 ]
+do
 
-read fnc
+	echo 'Enter program to use'
 
-if [ $fnc == "1" ];
-then
-	gcc text2.c -o 1
-	./1
-elif [ $fnc == "2" ];
-then
-	java test4.java
-elif [ $fnc == "3" ];
-then
-	java test3.java
-elif [ $fnc == "4" ];
-then
-	echo 'Would you like the java[1] or C[2] version?'
-	read lang
-	if [ $lang == '1' ];
+	read fnc
+
+	if [ $fnc == "1" ];
 	then
-		java test5.java
-	elif [ $lang == '2' ];
+		gcc text2.c -o 1
+		./1
+	elif [ $fnc == "2" ];
 	then
-		gcc port.c -o port
-		./port
+		java test4.java
+	elif [ $fnc == "3" ];
+	then
+		java test3.java
+	elif [ $fnc == "4" ];
+	then
+		echo 'Would you like the java[1] or C[2] version?'
+		read lang
+		if [ $lang == '1' ];
+		then
+			java test5.java
+		elif [ $lang == '2' ];
+		then
+			gcc port.c -o port
+			./port
+		else
+			echo 'invalid'
+		fi
+	elif [ $fnc == '--help' ];
+	then
+		cat help.txt
+	elif [ $fnc == 'exit' ];
+	then
+		var=1
 	else
-		echo 'invalid'
+		echo 'Invalid output, see --help'
 	fi
-else
-	echo 'Invalid output'
-fi
+done
 
 gcc text5.c -o 2
 ./2
