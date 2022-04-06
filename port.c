@@ -32,7 +32,7 @@ int main()
 	}
 
 	//school ending time
-	printf("Please enter the school ends: \nHours:\n> ");
+	printf("Please enter the time school ends: \nHours:\n> ");
 	int hr1;
 	scanf("%d", &hr1);
 	printf("Minutes:\n> ");
