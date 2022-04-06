@@ -15,24 +15,29 @@ do
 		./1
 	elif [ $fnc == "2" ];
 	then
-		java test4.java
+		gcc text4.c -o 2
+		./2
 	elif [ $fnc == "3" ];
 	then
-		java test3.java
+		java test4.java
 	elif [ $fnc == "4" ];
 	then
-		echo 'Would you like the java[1] or C[2] version?'
-		read lang
-		if [ $lang == '1' ];
-		then
-			java test5.java
-		elif [ $lang == '2' ];
-		then
-			gcc port.c -o port
-			./port
-		else
-			echo 'invalid'
-		fi
+		cho 'Would you like the java[1] or C[2] version?'
+                read lang
+                if [ $lang == '1' ];
+                then
+                        java test5.java
+                elif [ $lang == '2' ];
+                then
+                        gcc port.c -o port
+                        ./port
+                else
+                        echo 'invalid'
+                fi
+	elif [ $fnc == "5" ];
+	then
+		gcc text3.c -o 3
+		./3
 	elif [ $fnc == '--help' ];
 	then
 		cat help.txt
