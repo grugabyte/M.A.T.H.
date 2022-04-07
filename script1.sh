@@ -22,7 +22,7 @@ do
 		java test4.java
 	elif [ $fnc == "4" ];
 	then
-		cho 'Would you like the java[1] or C[2] version?'
+		echo 'Would you like the java[1] or C[2] version?'
                 read lang
                 if [ $lang == '1' ];
                 then
