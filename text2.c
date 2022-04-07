@@ -4,67 +4,77 @@
 
 int main() {
 
+	//variables
 	int fnc;
-
-	printf("Enter function [1-9] ");
-	scanf("%d", &fnc);
-
+	int var = 0;
 	int num1;
 	int num2;
+	float result;
 
-	printf("\nEnter number 1 ");
-	printf("\n> ");
-	scanf("%d", &num1);
-	printf("\nEnter number 2 ");
-	printf("\n> ");
-	scanf("%d", &num2);
+	while(var == 0) {
 
-	switch(fnc) {
-		case 1:
-			printf("This is function 1\n");
-			float result1 = num1 + num2;
-			printf(" = %f\n", result1);
-			break;
-		case 2:
-			printf("This is function 2\n");
-			float result2 = num1 - num2;
-			printf(" = %f\n", result2);
-			break;
-		case 3:
-			printf("This is function 3\n");
-			float result3 = num1 / num2;
-			printf(" = %f\n", result3);
-			break;
-		case 4:
-			printf("This is function 4\n");
-			float result4 = num1 * num2;
-			printf(" = %f\n", result4);
-			break;
-		case 5:
-			printf("This is function 5\n");
-			float result5 = num1 % num2;
-			printf(" = %f\n", result5);
-			break;
-		case 6:
-			printf("This is function 6\n");
-			double result6 = num1 * num1;
-			printf(" = %.2lf\n", result6);
-			break;
-		case 7:
-			printf("This is function 7\n");
-			printf("\nunnassigned");
-			break;
-		case 8:
-			printf("This is function 8\n");
-			printf("\nunnassigned");
-			break;
-		case 9:
-			printf("This is function 9\n");
-			printf(" Num1 = %d\n", num1);
-			printf(" Num2 = %d\n", num2);
-			break;
-		default:
-			printf("Invalid output\n");
+		printf("Enter function [1-9] ");
+		scanf("%d", &fnc);
+
+		if(fnc == 8) {
+			printf("Proceeding\n");
+		}
+		else {
+			printf("\nEnter number 1 ");
+			printf("\n> ");
+			scanf("%d", &num1);
+			printf("\nEnter number 2 ");
+			printf("\n> ");
+			scanf("%d", &num2);
+		}
+
+		switch(fnc) {
+			case 1:
+				printf("This is function 1\n");
+				result = num1 + num2;
+				printf(" = %f\n", result);
+				break;
+			case 2:
+				printf("This is function 2\n");
+				result = num1 - num2;
+				printf(" = %f\n", result);
+				break;
+			case 3:
+				printf("This is function 3\n");
+				result = num1 / num2;
+				printf(" = %f\n", result);
+				break;
+			case 4:
+				printf("This is function 4\n");
+				result = num1 * num2;
+				printf(" = %f\n", result);
+				break;
+			case 5:
+				printf("This is function 5\n");
+				result = num1 % num2;
+				printf(" = %f\n", result);
+				break;
+			case 6:
+				printf("This is function 6\n");
+				result = num1 * num1;
+				printf(" = %.2lf\n", result);
+				break;
+			case 7:
+				printf("This is function 7\n");
+				printf("\nunnassigned");
+				break;
+			case 8:
+				var++;
+				break;
+			case 9:
+				printf("This is function 9\n");
+				printf(" Num1 = %d\n", num1);
+				printf(" Num2 = %d\n", num2);
+				break;
+			default:
+				printf("Invalid output\n");
+		}
 	}
+
 	return 0;
 }

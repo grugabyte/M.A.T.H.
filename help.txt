@@ -7,11 +7,13 @@ FUNCTION 1:
 [4] - MULTIPLICATION
 [5] - DIVISION (%)
 [6] - SQUARE (NUM1)
+[8] - EXIT
 [9] - LIST
 
 FUNCTION 2:
 [1] - mm TO cm
 [2] - cm TO m
+[8] - EXIT
 [9] - CONVERSION TABLE
 
 FUNCTION 3:
