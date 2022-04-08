@@ -24,10 +24,13 @@ int main()
 
 	int i = 0;
 	char list[sub][25];
+	int lista[sub];
 
 	while(i < sub) {
 		printf("Enter subject\n>  ");
 		scanf("%s", &list[i]);
+		printf("Enter duration:\n> ");
+		scanf("%d", &lista[i]);
 		i++;	
 	}
 
@@ -67,16 +70,17 @@ int main()
 
 	while(j < k) {
 
-		if(newtm < 30) {
-			v = newtm + 30;
-			newtm = v;
+
+		if(lista[j] < 30) {
 			printf("%d:%d\t%s\n", newth, newtm, list[j]);
+			v = newtm + lista[j];
+			newtm = v;
 		}
 		else {
-			v = 60 - newtm;
+			printf("%d:%d\t%s\n", newth, newtm, list[j]);
+			v = 60 - lista[j];
 			newth++;
 			newtm = v;
-			printf("%d:%d\t%s\n", newth, newtm, list[j]);
 
 		}
 		j++;
