@@ -9,12 +9,12 @@ This program is designed to avoid the massive problem, maths (mental abuse to hu
 Installation:
 available on mac/linux
 
-Linux & mac (needs git installed):
-git clone https://github.com/grugabyte/M.A.T.H./
+Linux & mac (needs git installed): 
+`git clone https://github.com/grugabyte/M.A.T.H./`
 
 To use, open a terminal window in Linux or Mac (make sure the shell being used is bash)
-"cd M.A.T.H./"
-"bash script1.sh"
+`cd M.A.T.H./` 
+`bash script1.sh`
 
 # About
 In the program, you can use several functions. In these functions, you can use even more functions! For help, simply type "--help" and to exit type "exit".
